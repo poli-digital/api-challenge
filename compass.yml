@@ -1,0 +1,16 @@
+name: api-challenge
+id: ari:cloud:compass:d1d9f267-e2bb-4eba-889f-94028c5b05c4:component/5053650e-af41-4103-937c-7f83369b6aab/ba333187-2ebf-4cb8-baa0-cffa1efa8971
+description: null
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/poli-digital/api-challenge
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
