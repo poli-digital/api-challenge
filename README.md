@@ -8,24 +8,24 @@ Desenvolver uma API REST simples e funcional utilizando PHP (com o framework Lar
 
 A aplicação deve implementar um sistema de gerenciamento de tarefas, com as seguintes funcionalidades:
 
-1.	CRUD de Tarefas:
+- CRUD de Tarefas:
   -	Criar uma nova tarefa.
   -	Listar todas as tarefas.
   -	Visualizar os detalhes de uma tarefa específica.
   -	Atualizar uma tarefa existente.
   -	Excluir uma tarefa.
-2.	Detalhes da Tarefa:
+- Detalhes da Tarefa:
   -	Uma tarefa deve conter:
   -	id (gerado automaticamente, UUID preferido).
   -	title (obrigatório, texto).
   -	description (opcional, texto longo).
   -	status (enum: pending, in_progress, completed).
   -	created_at e updated_at.
-3.	Filtros na Listagem:
+- Filtros na Listagem:
   -	Permitir filtrar as tarefas pelo status.
-4.	Validação de Dados:
+- Validação de Dados:
   -	Valide os dados de entrada para garantir a consistência e segurança.
-5.	Tratamento de Erros:
+- Tratamento de Erros:
   -	Responda com mensagens claras e códigos HTTP apropriados.
 
 ## Expectativas Técnicas
@@ -64,21 +64,19 @@ A aplicação deve implementar um sistema de gerenciamento de tarefas, com as se
 
 ### Guia de Implementação
 
-1. Setup
+- Setup
+  -	Configure um projeto Laravel.
+  -	Utilize o comando artisan para gerar os recursos necessários.
 
--	Configure um projeto Laravel.
--	Utilize o comando artisan para gerar os recursos necessários.
-
-2. Funcionalidades
-
--	Rotas:
-  -	/api/tasks (GET) - Listar todas as tarefas.
-  -	/api/tasks?status={status} (GET) - Filtrar tarefas por status.
-  -	/api/tasks/{id} (GET) - Obter detalhes de uma tarefa.
-  -	/api/tasks (POST) - Criar uma nova tarefa.
-  -	/api/tasks/{id} (PUT) - Atualizar uma tarefa.
-  -	/api/tasks/{id} (DELETE) - Excluir uma tarefa.
--	Validação:
-  -	Use FormRequest ou validações no controlador para garantir a consistência.
--	Respostas:
-  -	Padronize as respostas d
+- Funcionalidades
+  -	Rotas:
+    -	/api/tasks (GET) - Listar todas as tarefas.
+    -	/api/tasks?status={status} (GET) - Filtrar tarefas por status.
+    -	/api/tasks/{id} (GET) - Obter detalhes de uma tarefa.
+    -	/api/tasks (POST) - Criar uma nova tarefa.
+    -	/api/tasks/{id} (PUT) - Atualizar uma tarefa.
+    -	/api/tasks/{id} (DELETE) - Excluir uma tarefa.
+  -	Validação:
+    -	Use FormRequest ou validações no controlador para garantir a consistência.
+  -	Respostas:
+    -	Padronize as respostas d
